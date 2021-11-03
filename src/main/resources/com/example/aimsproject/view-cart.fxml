@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="42.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/AIMS-Logo.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="1023.0" layoutY="145.0" prefHeight="556.0" prefWidth="335.0">
+         <children>
+            <Button layoutX="68.0" layoutY="220.0" mnemonicParsing="false" style="-fx-font-size: 24; -fx-background-color: red;" text="PLACE ORDER" textFill="WHITE" />
+            <GridPane layoutX="1.0" layoutY="46.0" prefHeight="132.0" prefWidth="325.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label style="-fx-font-size: 24;" text="Subtotal" />
+                  <Label style="-fx-font-size: 24;" text="20000" GridPane.columnIndex="1" />
+                  <Label style="-fx-font-size: 24;" text="Amount" GridPane.rowIndex="1" />
+                  <Label style="-fx-font-size: 24;" text="22000" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label style="-fx-font-size: 24;" text="VAT: 10%" textFill="RED" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="573.0" layoutY="126.0" style="-fx-font-size: 24;" text="20183548-HungND" />
+      <Label layoutX="180.0" layoutY="55.0" style="-fx-font-size: 40; -fx-font-weight: bold;" text="CART" textFill="#295bda" />
+    <AnchorPane layoutX="77.0" layoutY="186.0" minHeight="0.0" minWidth="0.0" prefHeight="432.0" prefWidth="883.0">
+         <children>
+            <GridPane layoutX="2.0" layoutY="7.0" prefHeight="128.0" prefWidth="880.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="429.2309029655068" minWidth="10.0" prefWidth="132.61567207846372" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="770.7699044303506" minWidth="10.0" prefWidth="186.07715331933954" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="770.7699044303506" minWidth="10.0" prefWidth="217.61585274301274" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="770.7699044303506" minWidth="10.0" prefWidth="377.07766529009314" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="127.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/doraemon-book.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label style="-fx-font-size: 24;" text="Doraemon" GridPane.columnIndex="1" />
+                  <Button mnemonicParsing="false" style="-fx-font-size: 24;" text="DELETE" GridPane.columnIndex="2" />
+                  <Pane GridPane.columnIndex="3">
+                     <children>
+                        <Label layoutX="76.0" style="-fx-font-size: 24;" text="20000 VND" />
+                        <Spinner layoutY="44.0" prefHeight="56.0" prefWidth="270.0" />
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
